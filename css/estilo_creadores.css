@@ -1,6 +1,7 @@
 body{
 	background-color: black;
 }
+
 p{
 	color: white;
 }
@@ -10,10 +11,12 @@ h1{
 	line-height: 2;
 }
 .contenedor {
-	width: 810px;
+	width: 75%;
 	margin: 0px auto;
 	margin-right: 150px auto;
 	text-align: center;
+
+
 }
 .creadores {
 	margin: 30px 0px 30px 15px; padding: 15px;
@@ -22,6 +25,7 @@ h1{
 	-moz-border-radius: 0px 0px 10px 10px;
 	border-radius: 0px 0px 10px 10px;
 }
+
 .creadores img {
 	float: left;
 	margin: -30px 0px 0px -30px;
@@ -29,6 +33,7 @@ h1{
 	-moz-box-shadow: 3px 3px 3px #888;
 	box-shadow: 3px 3px 3px #888;
 }
+
 .creadores h1 {
 	font-size: .9em;
 	color: #444;
@@ -47,6 +52,7 @@ h1{
 	-moz-transition:all 3s;
 	-o-transition:all 3s;
 }
+
 .creadores img:hover{
 	opacity: 0.3;
 }
