@@ -1,0 +1,37 @@
+.contenedor{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	background: black;
+	text-align: center;
+	position: relative;
+}
+.fondo{
+	display: inline-block;
+	width: 70%;
+	
+}
+.logo{
+	position: absolute;
+	bottom: 15%;
+	left: 25%;
+	font-size: 30px;
+	padding-top: 15.5px;
+}
+
+.contenedor img{
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+.contenedor img.royale{
+	width: 25%;
+}
+.contenedor p{
+	display: inline-block;
+	width: 48%;
+	background: #ecf0f1;
+	color: black;
+	font-weight: bold;
+
+}
