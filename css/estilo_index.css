@@ -5,6 +5,7 @@
 	background: black;
 	text-align: center;
 	position: relative;
+	
 }
 .fondo{
 	display: inline-block;
@@ -27,11 +28,22 @@
 .contenedor img.royale{
 	width: 25%;
 }
-.contenedor p{
-	display: inline-block;
-	width: 48%;
+article{
+	width: 100%;
 	background: #ecf0f1;
+	display: block;
+	text-align: center;
+	vertical-align: top;
+
+}
+article p{
+	display: inline-block;
+	width: 44%;
 	color: black;
 	font-weight: bold;
+	padding: 10px !important;
+	text-align: justify;
+	vertical-align: top !important;
+	background: white;
 
 }
