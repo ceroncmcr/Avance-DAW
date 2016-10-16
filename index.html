@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/Estilos_generales.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/estilo_index.css">
+	<link rel="stylesheet" href="css/style_coment.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
 </head>
 <body>	
@@ -44,9 +45,37 @@
 					Mientras ganas partidas aumentaras tu nivel y tus pokemon igual lo que les permitirá poder evolucionar, además podrás desbloquear cartas con pokemon más poderosos y pócimas que harán que tus pokemon sanen o tengan mayor fuerza de ataque.
 			</p>
 		</article>	
+		<!--area de comentarios-->
+		<section class="comentarios">
+<form name="comentarios" id="Comentarios" >
+<div>
+    <label for="txtname">Nombre</label>
+    <input type="text" id="txtname" placeholder="Escriba su nombre" required/>
+</div>
+<div>
+    <label for="txtcorreo">E-mail</label>
+    <input type="email" id="txtcorreo" placeholder="Example@Dominio.com" required/>
+</div>
+<div>
+    <label for="txtpais">Pais</label>
+    <input type="text" id="txtpais" placeholder="El Salvador" />
+</div>
+<div>
+    <label for="txtaconsulta">Comentario</label>
+    <textarea id="txtaconsulta" rows="3" cols="40" placeholder="Escriba aqui su comentario" required></textarea>
+</div>
+<input type="button" value="Publicar" id="publicar">
+    </form>
+    <section class="comentariosindividual">
+
+    </section>
+    </section>
+<!--fin de el area de comentarios-->
+
 	<footer>
 		<div class="foot"><p>© Copyright 2016 | Universidad Don Bosco | All
 		Rights Reserved.</p></div>		
 	</footer>
+	 <script src="js/comentarios.js"></script>
 </body>
 </html>

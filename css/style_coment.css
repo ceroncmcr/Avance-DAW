@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: white;
+}
+
+section.comentarios{
+    background: white;
+}
+
+form#Comentarios {
+    background: #2980b9;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 0.3em;
+    font-family: 'pokemon';
+    line-height: 1em;
+    color: yellow;
+    letter-spacing: 3px;
+}
+
+form#Comentarios>div{
+   
+    width: 80%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+form#Comentarios input{
+    
+    line-height: 1.5em;
+    display: block;
+    float: left;
+    border: 1px solid whitesmoke;
+    border-radius: 0.3em;
+}
+
+form#Comentarios label{
+    width: 25%;
+    
+    display: block;
+    float: left;
+    margin: 0% 2%;
+    line-height: 1.35em;
+}
+form#Comentarios textarea{
+    border: 1px solid whitesmoke;
+    border-radius: 0.3em;
+    resize: none;
+}
+
+form#Comentarios input[type="button"]{
+    margin: 0 auto;
+    color:white;
+    float: none;
+    width:12%;
+    line-height: 1.7em;
+    background: #FF5733;
+    
+}
+section.comentariosindividual{
+    background:white;
+}
+
+article.Comentario{
+    width:40%;
+    min-height: 80px;
+    background: #2980b9;
+    margin: 10px auto;
+    border-radius: 0.3em;
+    overflow: hidden;
+        
+}
+div.Comentario{
+    width:100%;
+    padding: 0.2em;
+    box-sizing: border-box;
+    border-radius: 0.3em 0.3em 0 0;
+    overflow: hidden;
+    background: rgba(13,71,161 ,1);
+    color: white;
+
+
+}
+h3.Comentario{
+   
+    overflow: hidden;
+    padding: 0 0.3em;
+    font-size: 1.1em;
+    border-bottom: 1px solid white;
+    font-family: 'pokemon';
+    line-height: 1em;
+    letter-spacing: 3px;
+}
+
+h4.Comentario{
+    
+    clear: both;
+    width: 100%;
+    padding: 0  0.3em;
+    overflow: hidden;
+}
+
+
+h4.Comentario>p,h3.Comentario>p{
+    background-color: transparent;
+    width: 30%;
+    float: left;
+    line-height: 0.5em;
+    color: white;
+    
+}
+
+h3.Comentario>p{
+    color: yellow;
+}
+p.Comentario{
+    background: transparent;
+    clear: both;
+    width: 95%;
+    padding: 0.3em;
+}
+
+@media(max-width: 768px){
+
+form#Comentarios{
+    width: 100%;
+    height: 300px;
+    font-size: 0.5em;
+}
+form#Comentarios label{
+    font-size: 1.8em;
+    background: transparent;
+    border: 0px;
+}
+ article.Comentario{
+    width: 100%;
+}
+form#Comentarios input[type="button"]{
+width:20%;
+}
+
+h3.Comentario>p,h4.Comentario>p{
+    width: 50%;
+}
+
+}/*fin 768*/
+
+@media(min-width:768px) and (max-width:1080px){
+form#Comentarios{
+    width: 80%;
+}
+article.Comentario{
+    width: 80%;
+}
+
+}
