@@ -45,25 +45,22 @@ function cargarImagen(){
 		var image= new Image();
 		image.src= "img/poke1.jpg";
 		image.onload= function(){
-			ctx.drawImage(image, 250,180,100,100);
+			ctx.drawImage(image, 250,300,100,100);
 		}
-
 	}
 	if(chk2.checked==true){
 		var image= new Image();
 		image.src= "img/poke2.jpg";
 		image.onload= function(){
-			ctx.drawImage(image, 250,180,100,100);
+			ctx.drawImage(image, 250,300,100,100);
 		}
-
 	}
 	if(chk3.checked==true){
 		var image= new Image();
 		image.src= "img/poke3.jpg";
 		image.onload= function(){
-			ctx.drawImage(image, 250,180,100,100);
+			ctx.drawImage(image, 250,300,100,100);
 		}
-
 	}
 	aleatorio= Math.floor(Math.random()*3);
 	dibujarEnemigo(aleatorio);
