@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/estilo_game.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
+	<script src="js/vida.js"></script>
 </head>
 <body>	
 	<header>
@@ -52,8 +53,11 @@
 		<tr>
 			<td></td>
 			<td>
-				<progress value="100" max="100" id="vida"></progress>
+				<progress value="100" max="100" id="vida" value="squirtle"></progress>
+				<span id="equipo"></span>
+				
 				<progress value="100" max="100" id="vidaEnemigo"></progress>
+				<span id="rival"></span>
 			</td>
 		</tr>
 		<tr>
@@ -68,9 +72,7 @@
 			</td>
 		</tr>
 	</table>
-		
-        
-			
+				
 	</div>
 	<footer>
 		<div class="foot"><p>© Copyright 2016 | Universidad Don Bosco | All

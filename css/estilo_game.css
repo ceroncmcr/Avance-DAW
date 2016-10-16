@@ -32,3 +32,22 @@ table{
 #vidaEnemigo{
 	float: right;
 }
+progress{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+}
+progress::-webkit-progress-value {
+	background: #FF0022;
+	border-radius: 10px;
+}
+progress::-webkit-progress-bar {
+	border-radius: 10px;
+}
+span{
+	color: white;
+} 
+#rival{
+	float: right;
+}

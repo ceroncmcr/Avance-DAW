@@ -37,6 +37,8 @@ function init(){
 }
 canvas.addEventListener("click",cargarImagen,false);
 function cargarImagen(){
+	var equipo=document.getElementById("equipo");
+	var rival= document.getElementById("rival");
 	var aleatorio;
 	//var chk1= document.getElementById("chk1");
 	//var chk2= document.getElementById("chk2");
@@ -44,13 +46,16 @@ function cargarImagen(){
 	if(chk1.checked==true){
 		var image= new Image();
 		image.src= "img/poke1.jpg";
+		equipo.innerHTML= "Charmander";
 		image.onload= function(){
 			ctx.drawImage(image, 250,300,100,100);
+
 		}
 	}
 	if(chk2.checked==true){
 		var image= new Image();
 		image.src= "img/poke2.jpg";
+		equipo.innerHTML= "Squirtle";
 		image.onload= function(){
 			ctx.drawImage(image, 250,300,100,100);
 		}
@@ -58,16 +63,30 @@ function cargarImagen(){
 	if(chk3.checked==true){
 		var image= new Image();
 		image.src= "img/poke3.jpg";
+		equipo.innerHTML= "Boulbasaur";
 		image.onload= function(){
 			ctx.drawImage(image, 250,300,100,100);
 		}
 	}
 	aleatorio= Math.floor(Math.random()*3);
+	
+	if(aleatorio==0){
+		rival.innerHTML= "Charmander";
+	}
+	else if(aleatorio==1){
+		rival.innerHTML= "Squirtle";
+	}
+	else if(aleatorio==2){
+		rival.innerHTML= "Boulbasaur";
+	}
+	
 	dibujarEnemigo(aleatorio);
 }
 function dibujarEnemigo(num){
+	
 	var enemigo= new Image();
 	enemigo.src = enemigos[num];
+	
 	enemigo.onload= function(){
 		ctx.drawImage(enemigo, 250,10,100,100);
 	}
