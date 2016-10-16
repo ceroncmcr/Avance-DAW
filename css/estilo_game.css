@@ -1,10 +1,27 @@
 body{
 	background-color: black;
 }
+table{
+	margin: 0 auto;
+}
+#game{
+	
+		border: solid;
+		border-color: white;
+	}
 .construccion{
 	margin-top: 5%;
 	margin-left: 25%;
 	width:50%;
 	height: 50%;
 	margin-bottom: 10%;
+}
+#chk1{
+	display: none;
+}
+#chk2{
+	display: none;
+}
+#chk3{
+	display: none;
 }
