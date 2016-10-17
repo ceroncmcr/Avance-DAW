@@ -3,7 +3,7 @@
 function animateprogress (id, val){		
 
 
-	var getRequestAnimationFrame = function () {  
+	var getRequestAnimationFrame = function () {  //getRequestAnimationFrame para tratar de la misma compatibilidad con los navegadores
 		return window.requestAnimationFrame ||
 		window.webkitRequestAnimationFrame ||   
 		window.mozRequestAnimationFrame ||
@@ -21,15 +21,16 @@ function animateprogress (id, val){
 			
 	if (i<=val) 
 		{
+			//incremento el valor de la barra 
 			document.getElementById(id).value= i;
-			
+			//incremento el porcentaje
 			i++;
 			fpAnimationFrame(animacion);         
 		}
 										
 	}
 
-		fpAnimationFrame(animacion);  
+		fpAnimationFrame(animacion);  //Lamo la funcion animation
 				
 }
 window.onload = function() { 
