@@ -1,6 +1,6 @@
 var canvas=document.getElementById("game");
 var ctx= canvas.getContext("2d");
-var enemigos= ["img/poke1.jpg","img/poke2.jpg", "img/poke3.jpg"];
+var enemigos= ["img/poke1.jpg","img/squirtle.gif", "img/poke3.jpg"];
 function init(){
 	var nave= document.getElementById("nave");
 	var nave2= document.getElementById("nave2");
@@ -54,7 +54,7 @@ function cargarImagen(){
 	}
 	if(chk2.checked==true){
 		var image= new Image();
-		image.src= "img/poke2.jpg";
+		image.src= "img/squirtle.gif";
 		equipo.innerHTML= "Squirtle";
 		image.onload= function(){
 			ctx.drawImage(image, 250,300,100,100);
