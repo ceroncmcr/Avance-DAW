@@ -181,6 +181,10 @@ $("#btn").on("click", function(){
 	}
 });
 
+$(document).keypress(function(event){
+	
+});
+
 
 
 //arreglos
