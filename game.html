@@ -2,12 +2,13 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Pokemon Royale</title>
+	<title>Pokemon ale</title>
 	<link rel="stylesheet" href="css/Estilos_generales.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/estilo_game.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
-	<script src="js/vida.js"></script>
+	
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 </head>
 <body>	
 	<header>
@@ -26,26 +27,28 @@
 	</header>
 
 	<div class="contenedor">		
-			<!-- Contenido -->	
+			<!-- Contenido -->
+
 			<table>
 		<tr>
-			<td><img src="img/cartas/charmander2.jpg" id="nave" class="nave" >
+			<td><img src="img/cartas/charmander2.jpg" id="carta" class="nave" >
 				<input type="checkbox" id="chk1">
+
 			</td>
 			<td rowspan="3">
 				<canvas id="game" width="600" height="400">Su navegador no soporta canvas</canvas>
-	<script type="text/javascript" src="js/script.js"></script>
+	
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<img src="img/cartas/squirtle.jpg" id="nave2" class="nave" >
+				<img src="img/cartas/squirtle.jpg" id="carta2" class="nave" >
 				<input type="checkbox" id="chk2">
 			</td>
 		</tr>
 		<tr>
 			<td>
-				<img src="img/cartas/boulbasaur.jpg" id="nave3" class="nave" >
+				<img src="img/cartas/boulbasaur.jpg" id="carta3" class="nave" >
 				<input type="checkbox" id="chk3">
 			</td>
 			
@@ -53,7 +56,7 @@
 		<tr>
 			<td></td>
 			<td>
-				<progress value="100" max="100" id="vida" value="squirtle"></progress>
+				<progress value="100" max="100" id="vida" value="/pokemons"></progress>
 				<span id="equipo"></span>
 
 				<progress value="100" max="100" id="vidaEnemigo"></progress>
@@ -63,22 +66,47 @@
 		<tr>
 			<td></td>
 			<td>
-				<img src="img/cartas/aliento_fuego.jpg" class="nave">
-				<img src="img/cartas/ataque_burbujas.jpg" class="nave">
-				<img src="img/cartas/hojas_navaja.jpg" class="nave">
-				<img src="img/cartas/bola_fuego.jpg" class="nave">
-				<img src="img/cartas/cura_agua.jpg" class="nave">
-				<img src="img/cartas/rayo_solar.jpg" class="nave">
+				<form>
+				<input type="button" value="atacar" id="btn"style="heigth:100px;width:100px;display:block;">
+				</form>
+				
 			</td>
 		</tr>
 	</table>
-				
+	<!--squirtle-->
+			<img src="img/pokemons/squirtle/1.png" id="SF1" class="poke">
+		    <img src="img/pokemons/squirtle/2.png" id="SF2" class="poke">
+		    <img src="img/pokemons/squirtle/3.png" id="SF3" class="poke">
+		    <img src="img/pokemons/squirtle/4.png" id="SF4" class="poke">
+		    <img src="img/pokemons/squirtle/5.png" id="SF5" class="poke">
+		    
+		    
+
+		   
+		   
+
+			<img src="img/pokemons/squirtle/ataq/1.png" id="SFA1" class="poke">
+		    <img src="img/pokemons/squirtle/ataq/2.png" id="SFA2" class="poke">
+		    <img src="img/pokemons/squirtle/ataq/3.png" id="SFA3" class="poke">
+		    <img src="img/pokemons/squirtle/ataq/4.png" id="SFA4" class="poke">
+		    <img src="img/pokemons/squirtle/ataq/5.png" id="SFA5" class="poke">
+
+
+			img src="img/pokemons/squirtle/ataq/espalda/1.png" id="SEA1" class="poke">
+		    <img src="img/pokemons/squirtle/ataq/espalda/2.png" id="SEA2" class="poke">
+		    <img src="img/pokemons/squirtle/ataq/espalda/3.png" id="SEA3" class="poke">
+		    <img src="img/pokemons/squirtle/ataq/espalda/4.png" id="SEA4" class="poke">
+		    <img src="img/pokemons/squirtle/ataq/espalda/5.png" id="SEA5" class="poke">
+			
+			<img src="img/poketerreno.png" id="poketerreno" class="poke">
 	</div>
 	
 	<footer>
 		<div class="foot"><p>© Copyright 2016 | Universidad Don Bosco | All
-		Rights Reserved.</p></div>		
+		Rights Reserved.</p></div>
+
 	</footer>
+	<script type="text/javascript" src="js/script2.js"></script>
 </body>
 </html>
 

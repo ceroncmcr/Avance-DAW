@@ -44,3 +44,6 @@ span{
 #rival{
 	float: right;
 }
+.poke{
+	display: none;
+}
